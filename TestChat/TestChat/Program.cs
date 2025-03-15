@@ -196,11 +196,6 @@ namespace TestChat
             Console.ReadKey(true);
         }
 
-        public void Check()
-        {
-            Console.WriteLine($"{message[0]}\nRead this message? {messageRead[0]}");
-        }
-
         public void SendMessage(Account sender)
         {
             Console.Write("Write name for who send message: ");
@@ -299,7 +294,7 @@ namespace TestChat
                     case ConsoleKey.D1:
                         account.mailUser.ReadingUnreadMessage();
 
-                        Console.WriteLine("1. Reading All (n)" +
+                        Console.WriteLine("\n1. Reading All (n)" +
                             "\n2. Back (esc)");
                         ConsoleKeyInfo keyInAction = Console.ReadKey(true);
 
