@@ -326,9 +326,11 @@ namespace TestChat
     {
         static void Main(string[] args)
         {
-            App app = new App();
+            /*App app = new App();
 
-            app.Start();
+            app.Start();*/
+
+
         }
     }
 }
