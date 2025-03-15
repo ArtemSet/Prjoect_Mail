@@ -171,7 +171,7 @@ namespace TestChat
                 }
                 else
                 {
-                    Console.WriteLine($"{i}. {message[i]}");
+                    Console.WriteLine($"{i + 1}. {message[i]}");
                     indexReadingMessage++;
                     continue;
                 }
@@ -326,15 +326,9 @@ namespace TestChat
     {
         static void Main(string[] args)
         {
-            /*App app = new App();
+            App app = new App();
 
-            app.Start();*/
-
-            for (int i = 0; i < 10; i++)
-            {
-                Console.WriteLine($"{i++}");
-                Console.WriteLine($"{i + 1}");
-            }
+            app.Start();
         }
     }
 }
