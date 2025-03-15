@@ -162,6 +162,7 @@ namespace TestChat
 
         public void ReadingUnreadMessage()
         {
+            Console.Clear();
             int indexReadingMessage = 0;
             for (int i = 0; i < messageRead.Count; i++)
             {
@@ -198,6 +199,8 @@ namespace TestChat
 
         public void SendMessage(Account sender)
         {
+            //Не забыть после окончания разработки реализовать логику запрета на отправления сообщения самому себе
+
             Console.Write("Write name for who send message: ");
             string name = Console.ReadLine();
 
